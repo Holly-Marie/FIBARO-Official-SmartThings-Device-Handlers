@@ -12,7 +12,7 @@
  *
  */
 metadata {
-    definition (name: "Fibaro Roller Shutter 2", namespace: "FibarGroup", author: "Fibar Group") {
+    definition (name: "Fibaro Roller Shutter 2 + Awning", namespace: "FibarGroup", author: "Fibar Group") {
         capability "Window Shade"
         capability "Garage Door Control"
         capability "Energy Meter"
