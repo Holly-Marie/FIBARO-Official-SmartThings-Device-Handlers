@@ -38,10 +38,10 @@ metadata {
         multiAttributeTile(name:"windowShade", type: "generic", width: 3, height: 4){
             tileAttribute ("device.windowShade", key: "PRIMARY_CONTROL") {
                 attributeState "unknown", label: 'Unknown', action: "calibrate", icon: "http://teez-media.com/images/screencalibrating.png", backgroundColor: "#ffffff"
-                attributeState "closed", label: 'Extended', action: "open", icon: "http://teez-media.com/images/screenextended.png", backgroundColor: "#ffffff", nextState:"opening"
-                attributeState "open", label: 'Retracted', action: "close", icon: "http://teez-media.com/images/screenclosed.png", backgroundColor: "#00a0dc", nextState:"closing"
-                attributeState "opening", label: 'Retracting', action: "stop", icon: "http://teez-media.com/images/screenhalf.png", backgroundColor: "#99d9f1", nextState:"partially open"
-                attributeState "closing", label: 'Extending', action: "stop", icon: "http://teez-media.com/images/screenhalf.png", backgroundColor: "#99d9f1", nextState:"partially open"
+                attributeState "closed", label: 'Retracted', action: "open", icon: "http://teez-media.com/images/screenclosed.png", backgroundColor: "#ffffff", nextState:"opening"
+                attributeState "open", label: 'Extended', action: "close", icon: "http://teez-media.com/images/screenextended.png", backgroundColor: "#00a0dc", nextState:"closing"
+                attributeState "opening", label: 'Extending', action: "stop", icon: "http://teez-media.com/images/screenhalf.png", backgroundColor: "#99d9f1", nextState:"partially open"
+                attributeState "closing", label: 'Retracting', action: "stop", icon: "http://teez-media.com/images/screenhalf.png", backgroundColor: "#99d9f1", nextState:"partially open"
                 attributeState "partially open", label: 'Partially Extended', action: "open", icon: "http://teez-media.com/images/screenhalf.png", backgroundColor: "#00a0dc", nextState:"opening"
             }
             tileAttribute("device.multiStatus", key:"SECONDARY_CONTROL") {
